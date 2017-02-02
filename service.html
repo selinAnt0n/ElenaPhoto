@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>ElenaPhoto</title>
+	<link media="all" rel="stylesheet" href="css/all.css" />
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+</head>
+<body class="service">
+	<header>
+		<a href="" class="logo"></a>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="service.html" class="active">Services</a>
+			<a href="contact.html">Contacts</a>
+		</nav>
+	</header>
+	<div class="service-content-holder">
+		<div class="service-content">
+			<div class="holder-service-span">
+				<span class="lol">- Studio photoshoot</span>
+				<span class="lol">- Shooting in the interior</span>
+				<span class="lol">- Shooting with a trip to anywhere in Kharkov and its environs</span>
+				<span class="lol">- Wedding photography</span>
+				<span class="lol">- Retouching pictures to order</span>
+			</div>
+		</div>
+	</div>
+	<div class="footer-holder">
+		<footer>
+			<div class="footer-click-holder">
+				<div class="footer-click">	
+				</div>
+			</div>	
+			<div class="light-holder" tabindex="5" id="hehe" onclick="haha()">
+				<div class="light2" id="light2"></div>
+				<img src="img/1.png" class="light">
+			</div>
+			<div class="shadow" id="haha">
+			</div>
+			<div class="footer-top">
+				<a href="" class="logo2"></a>
+				<span>Внимательно отнесемся к Вашим пожеланиям, фотографии сделаем в кратчайшие сроки, постараемся устроить Вам самую теплую обстановку:)</span>
+				<mark>&ndash; Елена В.</mark>
+			</div>
+			<div class="footer-bottom">
+				<form action="">
+					<fieldset>
+						<div class="read-box">
+							<label for="name">Name:</label>
+							<input type="text" id="name" />
+						</div>
+						<div class="read-box">
+							<label for="email">Email:</label>
+							<input type="email" id="email"/>
+						</div>
+						<textarea placeholder="Your massage"></textarea>
+						<div class="submit-holder">
+							<input type="submit" value="Send message" >
+						</div>
+					</fieldset>	
+				</form>
+			</div>
+		</footer>
+	</div>		
+	<div class="footer-fixed-holder">
+		<div class="footer-fixed">
+			<h6>Lets Connect</h6>
+			<ul class="sprites">
+				<li><a href="" class="f"></a></li>	
+				<li><a href="https://instagram.com/lenaavas/" class="inst"></a></li>
+				<li><a href="skype:elena.vasilieva7?call" class="skype"></a></li>
+				<li><a href="https://vk.com/elena_photo" class="vk"></a></li>							
+			</ul>
+			<div class="audio-player">
+				<img class="cover" src="img/logo-player.png" alt="" >
+				<audio id="audio-player" src="music/1.mp3"  type="audio/mp3" controls="controls"></audio>
+			</div>
+		</div>
+	</div>
+	<script>
+		 $(document).ready(function() {
+		 $('#audio-player').mediaelementplayer({
+		 alwaysShowControls: true,
+		 features: ['playpause','volume','progress'],
+		 audioVolume: 'horizontal',
+		 audioWidth: 200,
+		 audioHeight: 80
+		 });
+		 });
+	</script>
+	<script type="text/javascript">
+		function haha(){
+			 document.getElementById("haha").className = "you";
+			 document.getElementById("light2").className = "light2-active";
+		}
+	</script>
+</body>
+</html>

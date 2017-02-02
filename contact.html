@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>ElenaPhoto</title>
+	<link media="all" rel="stylesheet" href="css/all.css" />
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="" class="logo"></a>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="service.html">Services</a>
+			<a href="contact.html" class="active">Contacts</a>
+		</nav>
+	</header>
+	<div class="holder-contact">
+		<div class="contact">
+			<div class="info-box">
+				<div class="click_me"></div>
+				<div class="click_me click-me2"></div>
+				<div class="click_me click-me3"></div>
+				<div class="click_me click-me4"></div>
+				<div class="gallery2">
+					<ul class="switcher">
+						<li class="active"><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+					<div class="wrap">
+						<ul class="list">
+							<li>
+								<img src="img/1234.png">
+								<ul>
+									<li>Name : Elena</li>
+									<li>Surname : Vasilyeva</li>
+									<li>Age : 20</li>
+								</ul>
+							</li>
+							<li>
+								<div class="out">
+									<span>Out</span>
+									<div class="out-box">
+									</div>
+								</div>
+								<div class="in">
+									<span>In</span>
+									<div class="in-box">
+										<h6>Studios:</h6>	
+										<mark>Light Room</mark>
+										<mark>United Art Hall</mark>
+										<mark>Серебро</mark>
+										<mark>Б!нго</mark>
+									</div>
+								</div>
+							</li>
+							<li>
+								<img src="img/bg-phone.png">
+								<span>0938772004</span>
+							</li>
+							<li>
+								<span>Email</span>
+								<span>elena7vasylieva@gmail.com</span>
+							</li>
+						</ul>
+						<a href="" class="prev"></a>
+						<a href="" class="next"></a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-holder">
+		<footer>
+			<div class="footer-click-holder">
+				<div class="footer-click">	
+				</div>
+			</div>	
+			<div class="light-holder" tabindex="5" id="hehe" onclick="haha()">
+				<div class="light2" id="light2"></div>
+				<img src="img/1.png" class="light">
+			</div>
+			<div class="shadow" id="haha">
+			</div>
+			<div class="footer-top">
+				<a href="" class="logo2"></a>
+				<span>Внимательно отнесемся к Вашим пожеланиям, фотографии сделаем в кратчайшие сроки, постараемся устроить Вам самую теплую обстановку:)</span>
+				<mark>&ndash; Елена В.</mark>
+			</div>
+			<div class="footer-bottom">
+				<form action="">
+					<fieldset>
+						<div class="read-box">
+							<label for="name">Name:</label>
+							<input type="text" id="name" />
+						</div>
+						<div class="read-box">
+							<label for="email">Email:</label>
+							<input type="email" id="email"/>
+						</div>
+						<textarea placeholder="Your massage"></textarea>
+						<div class="submit-holder">
+							<input type="submit" value="Send message" >
+						</div>
+					</fieldset>	
+				</form>
+			</div>
+		</footer>
+	</div>		
+	<div class="footer-fixed-holder">
+		<div class="footer-fixed">
+			<h6>Lets Connect</h6>
+			<ul class="sprites">
+				<li><a href="" class="f"></a></li>	
+				<li><a href="https://instagram.com/lenaavas/" class="inst"></a></li>
+				<li><a href="skype:elena.vasilieva7?call" class="skype"></a></li>
+				<li><a href="https://vk.com/elena_photo" class="vk"></a></li>							
+			</ul>
+			<div class="audio-player">
+				<img class="cover" src="img/logo-player.png" alt="" >
+				<audio id="audio-player" src="music/1.mp3"  type="audio/mp3" controls="controls"></audio>
+			</div>
+		</div>
+	</div>
+	<script>
+		 $(document).ready(function() {
+		 $('#audio-player').mediaelementplayer({
+		 alwaysShowControls: true,
+		 features: ['playpause','volume','progress'],
+		 audioVolume: 'horizontal',
+		 audioWidth: 200,
+		 audioHeight: 80
+		 });
+		 });
+	</script>
+	<script type="text/javascript">
+		function haha(){
+			 document.getElementById("haha").className = "you";
+			 document.getElementById("light2").className = "light2-active";
+		}
+	</script>
+</body>
+</html>
